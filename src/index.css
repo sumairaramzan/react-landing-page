@@ -11,3 +11,171 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+p,h1{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.text-green{
+  background-color: #B9FF66;
+  border-radius: 5px;
+  
+}
+.btn-learn-more{
+  background-color: transparent !important;
+  color: #000;
+}
+/* src/components/ReusableCard.css */
+
+.card-container {
+  display: flex;
+  flex-direction: column; /* Start with a column layout for small screens */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  max-width: 100%; /* Full width on smaller screens */
+  margin: 10px;
+}
+
+.card-container:hover {
+  transform: translateY(-5px);
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-heading {
+  padding: 10px;
+  color: #000;
+  border-radius: 4px;
+  margin-bottom: 20px; /* Reduced margin for smaller screens */
+}
+
+.card-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: #000;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+.card-button:hover {
+  background-color: transparent;
+}
+
+.card-right {
+  margin-top: 20px; /* Add margin-top for spacing on small screens */
+  margin-left: 0; /* Remove left margin for small screens */
+}
+
+.card-image {
+  max-width: 100px; /* Reduced size for better responsiveness */
+  border-radius: 8px;
+}
+.btn-outline-light{
+  border: none !important;
+  color: #B9FF66 !important;
+}
+.btn-outline-light:hover{
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+  .card-container {
+    flex-direction: row; /* Switch to a row layout on medium and larger screens */
+    max-width: 500px; /* Limit max-width on larger screens */
+  }
+
+  .card-left {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .card-right {
+    margin-left: 20px; /* Restore left margin on larger screens */
+    margin-top: 0; /* Remove top margin for desktop layout */
+  }
+
+  .card-image {
+    max-width: 150px; /* Increase size on larger screens */
+  }
+}
+.section-bg{
+  background-color: #191A23;
+  color: #fff;
+  border-radius: 10px;
+}
+.border-line {
+  border-right: 1px solid #FFFFFF; /* Default for larger screens */
+  padding-right: 20px; /* Optional: Add some padding to the right */
+}
+
+.border-line:last-child {
+  border-right: none; /* Remove the right border for the last item on larger screens */
+}
+
+
+/* Responsive adjustment for screens smaller than 768px */
+@media (max-width: 767.98px) {
+  .border-line {
+    border-right: none; /* Remove right border on smaller screens */
+    border-bottom: 1px solid #FFFFFF; /* Add bottom border on smaller screens */
+    padding-right: 0; /* Remove right padding on smaller screens */
+    padding-bottom: 20px; /* Optional: Add some padding to the bottom */
+  }
+
+  .border-line:last-child {
+    border-bottom: none; /* Remove bottom border for the last item */
+  }
+}
+
+/* Custom styles for Accordion header and body */
+/* Override the background color of the expanded Accordion header */
+.custom-accordion .accordion-button:not(.collapsed) {
+  color: #000; /* Change this to your desired text color */
+  background-color: #B9FF66; /* Change this to your desired background color */
+  box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+  border-bottom: 1px solid #000;
+  border-width: 80% !important;
+}
+
+/* Optional: Override the color of the collapsed Accordion header */
+.custom-accordion .accordion-button {
+  background-color: #e0e0e0; /* Change this to your desired background color for collapsed state */
+  color: #000000; /* Change this to your desired text color for collapsed state */
+}
+.accordion-body{
+  background-color: #B9FF66!important;
+}
+.accordion-button:focus{
+box-shadow: none !important;
+}
+.accordion-item {
+  border: none !important;
+}
+.bg-color{
+  background-color: #F3F3F3;
+}
+.footer{
+  background-color: #191A23;
+}
+.nav-text .nav-link{
+  color: #fff !important;
+}
+
+
